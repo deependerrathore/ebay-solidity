@@ -70,11 +70,11 @@
 	},
 	"sources": {
 		"ebay.sol": {
-			"keccak256": "0x4d97982d08c2e23161d4a4b29202cc4883fec66820c3aab10f4983bd7b9443d9",
+			"keccak256": "0x64184c9a6ca6ea004e488bcaaa4e82b013e40fca014fdb3e119f4ffaf60411f5",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e2a7c1b8ae113921e7df6a629ecaddc0867787dc9251948c9b200bbb9f343679",
-				"dweb:/ipfs/QmYVkQDJGRDf3zQUBgomXcuSyd6V1oS3XsAYK5U51exQB6"
+				"bzz-raw://a599dcd03eceeba8a901e4052b4f55877468c2c5bd80a816eef589207f077b59",
+				"dweb:/ipfs/QmZsurJvwazc3hEibvxgcbaBqiawqd4yWNXACcAE5QWnC7"
 			]
 		}
 	},

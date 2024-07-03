@@ -33,6 +33,8 @@ contract Ebay {
         uint[] memory offerIds = new uint[](0);
 
         auctions[newAuctionId]= Auction(newAuctionId, payable(msg.sender),_name, _description, _min, 0,offerIds);
+        auctionList[msg.sender].push(newAuctionId);
+        newAuctionId++;
     }
 
     function createOffer(uint _auctionId) external payable {
