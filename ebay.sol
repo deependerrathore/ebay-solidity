@@ -52,4 +52,20 @@ contract Ebay {
 
 
     }
+
+    function transaction(uint _auctionId) external {
+        Auction storage auction = auctions[_auctionId];
+        Offer storage bestOffer = offers[auction.bestOfferId];
+
+        for(uint i =0;i<auction.offerIds.length;i++){
+            uint offerId = auction.offerIds[i];
+
+            if(offerId != auction.bestOfferId){
+                Offer storage offer = offers[offerId];
+                offer.buyer.transfer(offer.price); //contract -> b ether transfer
+            }
+        }
+
+        auction.seller.transfer(bestOffer.price); //contract -> a(seller)
+    }
 }

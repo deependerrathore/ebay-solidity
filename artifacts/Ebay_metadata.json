@@ -40,6 +40,19 @@
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "transaction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -70,11 +83,11 @@
 	},
 	"sources": {
 		"ebay.sol": {
-			"keccak256": "0x64184c9a6ca6ea004e488bcaaa4e82b013e40fca014fdb3e119f4ffaf60411f5",
+			"keccak256": "0x39722dbaba30a1ee61edd8febf36908416cb9c9a6edf2a7008a4ef32b2d88e27",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a599dcd03eceeba8a901e4052b4f55877468c2c5bd80a816eef589207f077b59",
-				"dweb:/ipfs/QmZsurJvwazc3hEibvxgcbaBqiawqd4yWNXACcAE5QWnC7"
+				"bzz-raw://fc4e62111b9b285c4809553224ce89c41c01770568e3b10d42d9814f3180d726",
+				"dweb:/ipfs/QmUyXHtAmACZNkALcdG1sqMidrbpWrSMMJGmrqnCCxZxVV"
 			]
 		}
 	},
