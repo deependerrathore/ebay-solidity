@@ -42,6 +42,153 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getAuctions",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "min",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "bestOfferId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "offerIds",
+								"type": "uint256[]"
+							}
+						],
+						"internalType": "struct Ebay.Auction[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getUserAuctions",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "min",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "bestOfferId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "offerIds",
+								"type": "uint256[]"
+							}
+						],
+						"internalType": "struct Ebay.Auction[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getUserOffers",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "auctionId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "buyer",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Ebay.Offer[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -83,11 +230,11 @@
 	},
 	"sources": {
 		"ebay.sol": {
-			"keccak256": "0x39722dbaba30a1ee61edd8febf36908416cb9c9a6edf2a7008a4ef32b2d88e27",
+			"keccak256": "0x3d4a06972bd81764cacec1f6af8b449ff702939bf4d6d7945fcb5c9789bd319b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://fc4e62111b9b285c4809553224ce89c41c01770568e3b10d42d9814f3180d726",
-				"dweb:/ipfs/QmUyXHtAmACZNkALcdG1sqMidrbpWrSMMJGmrqnCCxZxVV"
+				"bzz-raw://170e9da8759319a85c83e550fc859b0ff63dd1fe1e243172819f1936e6754f72",
+				"dweb:/ipfs/QmdKdqrhTB45RxRxTMvJQ3KQFqvqqgDvZ2rYBEW1GA1cZr"
 			]
 		}
 	},
