@@ -41,7 +41,7 @@ contract Ebay {
         Auction storage auction = auctions[_auctionId];
         Offer storage bestOffer = offers[auction.bestOfferId];
 
-        require(msg.value >= auction.min  && msg.value > bestOffer.price, "msg.value must be greater hen the minimum and best offer");
+        require(msg.value >= auction.min  && msg.value > bestOffer.price, "msg.value must be greater than the minimum and best offer");
 
         auction.bestOfferId = newOfferId;
         auction.offerIds.push(newOfferId);

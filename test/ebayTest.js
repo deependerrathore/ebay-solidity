@@ -35,4 +35,13 @@ contract("Ebay", (accounts) => {
       "Auction does not exist"
     );
   });
+
+  it("should not create an offer if price is too low", async () => {
+    await ebay.createAuction(auction.name, auction.description, auction.min);
+
+    await expectRevert(
+      ebay.createOffer(1, { from: buyer1, value: auction.min - 1 }),
+      "msg.value must be greater than the minimum and best offer"
+    );
+  });
 });
