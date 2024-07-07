@@ -28,4 +28,11 @@ contract("Ebay", (accounts) => {
     assert(auctions[0].description === auction.description);
     assert(Number(auctions[0].min) === auction.min);
   });
+
+  it("Should not create an offer if auction does not exist", async () => {
+    await expectRevert(
+      ebay.createOffer(1, { from: buyer1, value: auction.min + 10 }),
+      "Auction does not exist"
+    );
+  });
 });
